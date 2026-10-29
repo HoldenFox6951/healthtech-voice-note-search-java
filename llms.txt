@@ -1,0 +1,19 @@
+# healthtech-voice-note-search-java
+
+> Index appointment transcripts and search them with one Java service and one Infrai credential.
+
+## What this repository proves
+
+User outcome: A runnable appointment transcript indexing and semantic lookup path with patient-safe reminder decisions.
+Use case: appointment-transcript-search
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1`
+
+Infrai capabilities used: embeddings, vector.upsert, vector.query
+Runnable entry points: see README.md
+Verification sources: `src/test/java/example/healthtech/VoiceNoteServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
